@@ -1,0 +1,3 @@
+MyServletContextListener.contextInitialized() will be called when servletContext is created.
+Typical use of this method is initialize database connection object and set it as attribute of servletContext.
+So that every other Servlet can get this object and use it.
