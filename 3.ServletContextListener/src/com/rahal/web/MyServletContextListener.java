@@ -1,6 +1,7 @@
 package com.rahal.web;
 
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextAttributeEvent;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
@@ -19,6 +20,8 @@ public class MyServletContextListener implements ServletContextListener{
 		ServletContext sc = e.getServletContext();
 		String breed = sc.getInitParameter("breed");
 		Dog dog = new Dog(breed);
+		sc.setAttribute("dog", dog);// attribute added Dog.attributeAdded() will be called.
+		sc.removeAttribute("dog");// Dog.attributeRemoved() will be called
 		sc.setAttribute("dog", dog);
 	}
 
