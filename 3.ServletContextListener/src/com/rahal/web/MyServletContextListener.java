@@ -4,7 +4,6 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextAttributeEvent;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-
 import com.rahal.model.Dog;
 
 public class MyServletContextListener implements ServletContextListener{
