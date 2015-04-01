@@ -17,4 +17,4 @@ Learning points.
 5. Idempotent Concept (Get = Idempotent, Post = non-Idempotent) [Idempotent means not change anything on server]
 6. Redirection VS Dispatch
    Redirection = Asking client to call other url. url change
-   Dispatch    = client(brower) do not anything. all work done by server.url doesnt change
+   Dispatch    = client(brower) do not anything. all work done by server. url doesnt change
