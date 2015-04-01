@@ -16,6 +16,10 @@
   </context-param>
   
   <listener>
-  	<listener-class>com.rahal.web.MyServletContextListener</listener-class>
+  	<listener-class>com.rahal.web.MyServletContextListener</listener-class> 	
+  </listener>
+  <listener>
+  	<listener-class>com.rahal.web.AppContextAttributeListener</listener-class>
+  	
   </listener>
 </web-app>
