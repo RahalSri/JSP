@@ -26,5 +26,10 @@ ELSE IF (there is no session ID cookie OR there is no current session matching t
 		 </session-config>
 	  2. To set time out for specific session
 	     session.setMaxInactiveInterval(15*60)
+	     
+========================================================== Note =========================================================
+When we use HttpServletRequest getSession() method and it creates a new request, it creates the new HttpSession object 
+and also add a Cookie to the response object with name JSESSIONID and value as session id. This cookie is used to identify the 
+HttpSession object in further requests from client.
       
    
