@@ -2,3 +2,6 @@
 2.If you don't encode URL and client won't accept cookies, you don't get to use sessions.
 3.If you do encode your URLs, the container will first attempt to use cookies for session management, and fall back
   to URL rewriting only if the cookie approach fails.
+4.Two scenarios you need to encode URL
+   1. response.encodeURL("LogoutServlet")
+   2. response.encodeRedirectURL("");
