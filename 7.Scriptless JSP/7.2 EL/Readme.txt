@@ -1,5 +1,7 @@
 ========================= JSP Expression Language =====================
+
 1. Syntax 1 (Dot Operator) : ${firstThing.secondThing}
+
 	a) "firstThing" could be following
 	   1. Implicit Objects eg : {pageScope,requestScope,sessionScope,applicationScope,cookie,intparam,pagecontext}
 	      Note: All these are "MAP" objects but pagecontext. pagecontext is actual reference to pageContext Object.
