@@ -33,6 +33,8 @@
 		</c:if>
 		<input type="submit" value="Show Result" >
 		
+		<!-- uncomment below line to see how we can handle exceptions -->
+		<% //int x = 10/0; %>
 	  </form>
 	</body>  
 </html>  

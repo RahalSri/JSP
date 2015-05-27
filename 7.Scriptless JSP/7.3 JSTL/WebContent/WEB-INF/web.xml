@@ -12,4 +12,8 @@
     <servlet-name>show</servlet-name>
     <url-pattern>/show</url-pattern>
   </servlet-mapping>
+  <error-page>
+  	<exception-type>java.lang.ArithmeticException</exception-type>
+  	<location>/ArithmaticException.jsp</location>
+  </error-page>
 </web-app>
