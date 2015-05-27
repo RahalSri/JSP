@@ -22,3 +22,6 @@ iteration and control statements, internationalization tags, and SQL tags.
 5. JSTL Functions Tags: JSTL tags provide a number of functions that we can use to perform common operation, most of them are for String manipulation such as String Concatenation, Split String etc. Syntax to include JSTL functions in JSP page is:
 
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+	
+	
+Note: how we can handle exception by uncommenting <% //int x = 10/0; %> in index.jsp. Also look at the web.xml
