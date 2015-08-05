@@ -2,7 +2,7 @@ First have a look at the generated java servlet for JSP. Normally this file can 
 \apache-tomcat-7.0.57\work\Catalina\localhost\JSP\org\apache\jsp
 
 1. Look at the "public void _jspService(final javax.servlet.http.HttpServletRequest request, final javax.servlet.http.HttpServletResponse response) throws java.io.IOException, javax.servlet.ServletException {}"
-   method in generated servlet.
+   method in generated servlet.Note implicit references like "out","response",.. etc available for jsp.
 2. Note <%! int count = 0; %> create a instance variable (If use <% int count = 0; %> create local variable)
    Same way you can define methods outside of "_jspService" method.
 3. <% out.println(count); %> is equal to <%= count++ %> . Note no semicolon in <%= count++ %>;
