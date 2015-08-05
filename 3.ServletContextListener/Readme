@@ -1,11 +1,16 @@
 1. MyServletContextListener.contextInitialized() will be called when servletContext is created.
 Typical use of this method is initialize database connection object and set it as attribute of servletContext.
 So that every other Servlet can get this object and use it.
+we have following listeners.
+   1.ServletRequestListener
+   2.HttpSessionListener
+   3.ServletContextListener
+
 
 2. Note how ServletContextAttributeListener used. So Altogether we have following three Attribute Listeners.
    1.ServeletRequestAttributeListener
-   2.ServletContextAttributeListener
-   3.HttpSessionAttributeListerner
+   2.HttpSessionAttributeListerner
+   3.ServletContextAttributeListener
    
 Note: HttpSessionBindingListerner is used within attribute ,so that attribute itself can find out when they 
       added/deleted or modified.
